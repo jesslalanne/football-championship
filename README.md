@@ -3,8 +3,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 League Championships
-- manage players
+- manage players (edit, add)
+- upload photo
 - filter
+- dashboard
+- authenfication
+- edit/add a new match
 
 ## Author
 Jessica Lalanne (via Coding Revolution)
