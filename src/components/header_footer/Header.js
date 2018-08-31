@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { AppBar, Toolbar, Button } from "@material-ui/core";
 
 import  { Link } from "react-router-dom";
-
+import CityLogo from '../shared/CityLogo';
 
 class Header extends Component {
     render() {
@@ -16,10 +16,18 @@ class Header extends Component {
                     borderBottom: "2px solid #00285E"
                 }}
             >
-                <Toolbar styles={{display: "flex"}}>
-                    <div styles={{FlexGrow: 1}}>
-                        <div className="header_logo">LOGO</div>
+                <Toolbar style={{display: "flex"}}>
+                    <div style={{FlexGrow: 1}}>
+                        <div className="header_logo">
+                            <CityLogo
+                                link={true}
+                                linkTo="/"
+                                width="70px"
+                                height="70px"
+                            />
+                        </div>
                     </div>
+
                     <Link to="/the_team">
                         <Button color="inherit">The Team</Button>
                     </Link>
