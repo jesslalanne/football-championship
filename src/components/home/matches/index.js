@@ -11,7 +11,7 @@ const MatchesHome = () => {
                     size="50px"
                     color="#ffffff"
                 >
-                    Matches from Firebase
+                    Matches
                 </Tag>
                 
 
