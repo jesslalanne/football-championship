@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { AppBar, Toolbar, Button } from "@material-ui/core";
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar'
+import Button from '@material-ui/core/Button';
 
-import  { Link } from "react-router-dom";
-import CityLogo from '../shared/CityLogo';
+import { Link } from 'react-router-dom';
+
+import { CityLogo } from '../shared/CityLogo';
 
 class Header extends Component {
     render() {
@@ -10,14 +13,14 @@ class Header extends Component {
             <AppBar
                 position="fixed"
                 style={{
-                    backgroundColor:"#98C5E9",
-                    boxShadow: "none",
-                    padding: "10 px 0",
-                    borderBottom: "2px solid #00285E"
+                    backgroundColor:'#98c5e9',
+                    boxShadow: 'none',
+                    padding:'10px 0',
+                    borderBottom: '2px solid #00285e'
                 }}
             >
-                <Toolbar style={{display: "flex"}}>
-                    <div style={{FlexGrow: 1}}>
+                <Toolbar style={{display:'flex'}}>
+                    <div style={{flexGrow: 1}}>
                         <div className="header_logo">
                             <CityLogo
                                 link={true}
@@ -25,19 +28,17 @@ class Header extends Component {
                                 width="70px"
                                 height="70px"
                             />
-                        </div>
+                        </div>  
                     </div>
 
                     <Link to="/the_team">
-                        <Button color="inherit">The Team</Button>
+                        <Button color="inherit">The team</Button>
                     </Link>
-
-                    <Link to="/the_match">
-                    <Button color="inherit">Matches</Button>
+                    <Link to="/the_matches">
+                        <Button color="inherit">Matches</Button>
                     </Link>
 
                 </Toolbar>
-
             </AppBar>
         );
     }
