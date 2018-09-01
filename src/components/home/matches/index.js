@@ -1,5 +1,6 @@
 import React from 'react';
-import { Tag } from "../../shared/Misc"
+import { Tag } from "../../shared/Misc";
+import Blocks from "./Blocks";
 
 const MatchesHome = () => {
     return (
@@ -10,11 +11,11 @@ const MatchesHome = () => {
                     size="50px"
                     color="#ffffff"
                 >
-                    Matches
+                    Matches from Firebase
                 </Tag>
                 
 
-                BLOCK
+                <Blocks />
 
                 <Tag
                     bck="#ffffff"
