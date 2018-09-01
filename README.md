@@ -7,8 +7,11 @@ League Championships
 - upload photo
 - filter
 - dashboard
-- authenfication
+- authentification
 - edit/add a new match
+- transition, effects
+- form
+- firebase 
 
 ## Author
 Jessica Lalanne (via Coding Revolution)
